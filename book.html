@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - Patient Appointment Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">PAB</div>
+        <nav>
+            <button onclick="window.location.href='index.html'">Home</button>
+            <button onclick="logout()">Logout</button>
+        </nav>
+    </header>
+    
+<div class="container1">
+    <div class="bookingForm">
+        <h2>Booking form</h2>
+        <form id="bookingForm">
+            <input type="text" id="patientName" placeholder="Name of the Patient" required>
+            <input type="number" id="patientAge" placeholder="Age of the Patient" required>
+            <input type="text" id="patientState" placeholder="State" required>
+            <input type="text" id="patientLGA" placeholder="LGA" required>
+            <input type="text" id="patientCity" placeholder="Address" required>
+            <input type="text" id="patientPhone" placeholder="+234" required>
+            <br>
+            <button type="button" onclick="submitBooking()">Submit Booking</button>
+            <p id="bookingStatus"></p>
+            <p id="ticketId" style="display:none;">Your Ticket ID: <span></span></p>
+        </form>
+    </div>
+    
+            <!-- My Bookings Section -->
+            <div id="myBookings" style="display:one;">
+                <h3>Your Bookings</h3>
+                <ul id="bookingList"></ul>
+                <p id="bookingStatus" style="display:none;">No bookings applied for.</p>
+            </div>
+            </div>
+            <br>
+            <br>
+
+    <footer class="footer">
+        <p>&copy; 2024 Patient Appointment Booking</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

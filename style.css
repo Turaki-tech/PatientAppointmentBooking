@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #e8ebf2;
+}
+
+header {
+    background-color: rgb(15, 32, 109);
+    color: white;
+    padding: 25px;
+    text-align: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+nav button {
+    background-color: #e48b0d;
+    color: white;
+    border: none;
+    font-size: 10px;
+    padding: 7px 15px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background 0.3s;
+}
+
+nav button:hover {
+    background-color: #c9780b;
+}
+
+.container, .container1{
+    max-width: 500px;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid #ddd; /* Optional outline for definition */
+}
+
+#myBookings ul{
+  list-style: none;
+}
+
+h2 {
+    color: rgb(15, 32, 109);
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+    width: 80%;
+    padding: 12px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus {
+    outline: none;
+    border-color: rgb(15, 32, 109);
+}
+
+button {
+    width: 80%;
+    padding: 12px;
+    background-color: rgb(15, 32, 109);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #e48b0d;
+}
+
+.footer {
+    background-color: rgb(15, 32, 109);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#bookingStatus {
+    margin-top: 20px;
+    color: rgb(15, 32, 109);
+    font-size: 18px;
+}
+
+#ticketId {
+    display: none;
+    font-size: 16px;
+    color: #e48b0d;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    header, .footer {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="number"],
+    button {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}

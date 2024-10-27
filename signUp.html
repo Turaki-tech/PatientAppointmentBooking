@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Patient Appointment Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">PAB</div>
+        <nav>
+          <button type="button" onclick="handleSignUp()">Sign-Up</button>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Sign Up</h2>
+        <form id="signUpForm">
+            <input type="text" id="firstName" placeholder="First Name" required>
+            <input type="text" id="lastName" placeholder="Last Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="button" onclick="signUp()">Sign Up</button>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Patient Appointment Booking</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
